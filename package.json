@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/wwmd/tyler-ellis/issues"
   },
-  "homepage": "https://github.com/wwmd/tyler-ellis#readme"
+  "homepage": "https://github.com/wwmd/tyler-ellis#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shopify-upload": "^2.0.0",
+    "gulp-watch": "^4.3.11"
+  }
 }

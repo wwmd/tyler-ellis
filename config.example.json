@@ -1,5 +1,5 @@
 {
-  “shopify_api_key”: “whateveryourapikeyishere”,
-  “shopify_api_password”: “whateveryourapipasswordishere”,
-  “shopify_url”: “YOUR-STORE-NAME.myshopify.com”
+  "shopify_api_key": "foo",
+  "shopify_api_password": "bar",
+  "shopify_url": "baz"
 }

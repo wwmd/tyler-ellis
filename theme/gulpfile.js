@@ -30,13 +30,21 @@ switch (environment) {
 }
 
 gulp.task('shopifywatch', function() {
+  return watch('**')
+    .pipe(gulpShopify(
+      credentials.shopify_api_key,
+      credentials.shopify_api_password,
+      credentials.shopify_url
+    ));
+});
 
-return watch('**')
- .pipe(gulpShopify(
-   credentials.shopify_api_key,
-   credentials.shopify_api_password,
-   credentials.shopify_url
-  ));
+gulp.task('build', function() {
+  gulp.src('**')
+    .pipe(gulpShopify(
+      credentials.shopify_api_key,
+      credentials.shopify_api_password,
+      credentials.shopify_url
+    ));
 });
 
 gulp.task('default', [
